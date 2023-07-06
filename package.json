@@ -1,11 +1,14 @@
 {
   "name": "pdf_merger",
+  "homepage": "http://sadanmian.github.io/pdf_merger",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "nodemon": "nodemon main.js"
+    "nodemon": "nodemon main.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +19,7 @@
     "pdf-merger-js": "^4.3.0"
   },
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "nodemon": "^2.0.22"
   }
 }
